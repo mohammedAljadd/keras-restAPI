@@ -6,4 +6,4 @@ image = {'image': open('me.jpg', 'rb')}
 
 response = requests.post(BASE, files=image)
 
-print(response.json())
+print(response)
