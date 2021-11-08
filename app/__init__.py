@@ -16,5 +16,5 @@ api.add_resource(TextRecognition, "/text")
 api.add_resource(Test, "/")
 
 
-
+from app import application
 

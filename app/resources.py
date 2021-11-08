@@ -1,5 +1,5 @@
 from flask_restful import Resource
-from flask import request
+from flask import request, render_template, make_response
 from app.utils import *
 
 # The first resource is used for facial recognition
@@ -18,7 +18,7 @@ class FacialRecognition(Resource):
                 prediction = facial_recognition(image)
 
         # return result
-        return prediction
+        return make_response(render_template("result.html", result = prediction), 200)
 
 
 
