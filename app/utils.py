@@ -1,8 +1,5 @@
 def save_image(request):
     image = request.files["image"]
-    txt = request.files["type"]
-    with open(txt) as f:
-        lines = f.readlines()
     from app import app
     image_path = app.config["IMAGE_FOLDER"]+"/"+image.filename
     image.save(image_path)

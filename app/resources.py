@@ -18,7 +18,7 @@ class FacialRecognition(Resource):
                 prediction = facial_recognition(image)
 
         # return result
-        return {"data": f"{prediction}"}
+        return prediction
 
 
 

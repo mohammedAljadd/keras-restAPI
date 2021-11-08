@@ -18,4 +18,3 @@ api.add_resource(Test, "/")
 
 
 
-from app import application
