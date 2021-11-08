@@ -10,7 +10,7 @@ class FacialRecognition(Resource):
 
         if request.method == "POST":
             if request.files:
-                
+
                 # receive and save the image
                 image = save_image(request)
 
@@ -31,3 +31,11 @@ class ObjectDetection(Resource):
 class TextRecognition(Resource):
     def post(self, image=0):
         return {"data": "textrecognition function"}
+
+
+
+class Test(Resource):
+    def post(self):
+        return {
+        "data": "Flask is working"
+        }
