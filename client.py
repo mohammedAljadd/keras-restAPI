@@ -1,4 +1,5 @@
 import requests
+from app import BASE
 
 BASE = "http://192.168.43.203:5000/face"
 
